@@ -13,6 +13,10 @@
     display: flex;
 }
 
+.text-dark01{
+    color: #131313;
+}
+
 .text-dark02{
       color: #424242;
 }
@@ -33,6 +37,11 @@
     border: none;
     font-size: 1.25rem;
     font-weight: 600;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 /* header styles */
@@ -70,6 +79,14 @@
     line-height: 26px;
 }
 
+/* banner related styles */
+
+header{
+    padding: 45px;
+   
+}
+
+
 .banner-content{
     max-width: 850px;
     margin: 0 auto;
@@ -89,15 +106,102 @@
     margin-bottom: 32px;
 }
 
+
+
 .banner-img img{
     width: 100%;
 }
 
+/* main section related styles */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.team{
+    align-items: center;
+    gap: 75px;
+    margin-top: 85px;
+    margin-bottom: 130px;
+}
+
+.features{
+    max-width: 537px;
+    width: 100%;
+}
+
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.team-img img{
+    width: 100%;
+}
+
+.features .features-title{
+    font-size: 3rem;
+}
+
+.features .features-title .quick-list-1{
+    font-weight: 500;
+}
+
+
+
+.features .features-title .quick-list-3{
+    color: #FF900E;
+}
+
+.features .features-desc{
+    font-weight: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 35px;
+}
+
+/* some facts section design */
+
+
+
+.some-facts-desc{
+    font-size: 1rem;
+    line-height: 26px;
+   
+}
+
+/* responsive styles */
+
+/* for small devices */
+
 @media screen and (max-width: 576px){
-    .navbar, .nav-links{
+    .navbar, .nav-links, .team{
         flex-direction: column;
         text-align: center;
       
        
+    }
+
+    .team{
+        gap: 20px;
+    }
+
+    .team-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* for medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .team{
+        flex-direction: column;
+        
+    }
+
+    .features{
+        margin-left: 80px;
     }
 }
