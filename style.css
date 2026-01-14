@@ -208,6 +208,26 @@ main{
     border-radius: 10px;
 }
 
+#exp-bdg{
+    padding: 45px 40px;
+    background-color: #FF900E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    margin-left: -40px;
+    margin-top: -200px;
+}
+#exp-yrs{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+#exp-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 40px;
+}
 
 
 
@@ -337,6 +357,11 @@ main{
         gap: 50px;
         margin-bottom: 60px;
      }
+
+     #exp-bdg{
+        width: 100%;
+        margin: 0 auto;
+     }
     }
      
 
@@ -365,6 +390,11 @@ main{
         grid-template-columns: repeat(3, 1fr);
          gap: 50px;
           margin-bottom: 60px;
+     }
+
+     #exp-bdg{
+        width: 100%;
+        margin: 0 auto;
      }
 
     
