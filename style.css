@@ -161,9 +161,61 @@ main{
     margin-bottom: 35px;
 }
 
-/* some facts section design */
+/* features you will love related design */
+
+.fuwl-container{
+   align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 100px;
+}
 
 
+
+.fuwl-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+    margin-bottom: 24px;
+}
+
+.fuwl-desc{
+    font-size: 1rem;
+    line-height: 26px;
+}
+
+.fuwl-card-container{
+    margin-top: 30px;
+}
+
+.fuwl-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+  
+}
+
+.fuwl-img img{
+    width: 100%;
+}
+
+.fuwl-card{
+    max-width: 580px;
+    box-sizing: border-box;
+    padding: 24px;
+    margin-bottom: 20px;
+     box-shadow:
+    0 18px 35px -18px rgba(0, 0, 0, 0.08),  /* main soft shadow, pulled down */
+    0 0 0 1px rgba(0, 0, 0, 0.03); 
+    border-radius: 10px;
+}
+
+
+
+
+/* some facts section related design */
+
+#some-facts-section{
+    margin-top: 130px;
+}
 
 .some-facts-desc{
     font-size: 1rem;
@@ -206,12 +258,28 @@ main{
 
 }
 
+.footer-section{
+    max-width: 1440px;
+    height: 100px;
+    background-color: #FFF4E7;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    font-size: 1.25rem;
+    text-align: center;
+}
+
 /* sponser section related styles */
 
 .sponsor-info{
     max-width: 540px;
     text-align: center;
     margin: 0 auto;
+    
 }
 
 .sponsor-info .sponsor-title{
@@ -228,6 +296,7 @@ main{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
+    margin-bottom: 130px;
 }
 
 .sponsors-logo img{
@@ -247,6 +316,10 @@ main{
        
     }
 
+    .fuwl-container{
+        flex-direction: column;
+    }
+
     .team{
         gap: 20px;
     }
@@ -262,13 +335,15 @@ main{
      }
      .sponsors-logo{
         gap: 50px;
+        margin-bottom: 60px;
      }
-}
+    }
+     
 
 /* for medium devices */
 
 @media screen and (min-width: 576px) and (max-width: 992px){
-    .team{
+    .team, .fuwl-container{
         flex-direction: column;
         
     }
@@ -288,10 +363,9 @@ main{
 
      .sponsors-logo{
         grid-template-columns: repeat(3, 1fr);
+         gap: 50px;
+          margin-bottom: 60px;
      }
 
-     .sponsors-logo{
-        gap: 50px;
-        
-     }
+    
 }
